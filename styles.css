@@ -10,29 +10,12 @@
   background-color: rgb(249, 207, 207);
 }
 
+.index_background {
+  background-color: rgb(255, 186, 186);
+}
+
 .center {
   text-align: center;
-}
-
-.header {
-  padding: 15px 15px 0px 15px;
-  color: white;
-  text-shadow: 1px 0 black, -1px 0 black, 0 1px black,
-    0 -1px black;
-  border-radius: 1em 1em 0em 0em;
-}
-
-.header_PC {
-  border: 1px solid orange;
-  background-color: orange;
-  color: black;
-  text-shadow: 1px 0 white, -1px 0 white, 0 1px white,
-    0 -1px white;
-}
-
-.header_Switch {
-  border: 1px solid red;
-  background-color: red;
 }
 
 footer {
@@ -137,7 +120,6 @@ img {
   width: 100%;
   background-color: black;
   z-index: 100;
-  border-radius: 0.7em;
 }
 
 .navbar {
@@ -214,6 +196,7 @@ img {
   }
 
   .nav-menu {
+    position: sticky;
     display: grid;
     grid-template-columns: auto;
     background: red;
