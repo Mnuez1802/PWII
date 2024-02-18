@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+}
+
+.pc_background {
+  background-color: rgb(244, 224, 186);
+}
+
+.switch_background {
+  background-color: rgb(249, 207, 207);
+}
+
+.center {
+  text-align: center;
+}
+
+.header {
+  padding: 15px 15px 0px 15px;
+  color: white;
+  text-shadow: 1px 0 black, -1px 0 black, 0 1px black,
+    0 -1px black;
+  border-radius: 1em 1em 0em 0em;
+}
+
+.header_PC {
+  border: 1px solid orange;
+  background-color: orange;
+  color: black;
+  text-shadow: 1px 0 white, -1px 0 white, 0 1px white,
+    0 -1px white;
+}
+
+.header_Switch {
+  border: 1px solid red;
+  background-color: red;
+}
+
+footer {
+  text-align: center;
+  color: black;
+}
+
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 110%;
+  color: white;
+  text-shadow: 1px 0 black, -1px 0 black;
+}
+
+
+.card {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  height: 25em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
+  transition: all 0.2s ease-out;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card_text {
+  background-color: red;
+  margin-right: auto;
+  margin-left: auto;
+  height: 4em;
+  border-radius: 0em 0em 0em 0em;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  font-size: 110%;
+  font-weight: 500;
+}
+
+.card_text_p {
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.img_juego {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.card_2 {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  height: 25em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.letra_negra {
+  color: black;
+  text-shadow: none;
+  text-align: justify;
+  font-size: 125%;
+}
+
+/* MENU DESPLEGABLE */
+
+.nav-container{
+  width: 100%;
+  background-color: black;
+  z-index: 100;
+  border-radius: 0.7em;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 0.2fr auto 1fr;
+  align-items: center;
+  height: 80px;
+  width: 90%;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+#navbar-logo {
+  text-align: center;
+  color: white;
+  justify-self: start;
+  margin-left: 20px;
+}
+
+#navbar-logo {
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  list-style: none;
+  text-align: center;
+  width: 70%;
+  justify-self: end;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  color: red;
+  transition: all 0.2s ease-out;
+}
+
+.nav-links-btn {
+  background-color: red;
+  padding: 6px 16px;
+  border-radius: 5px;
+}
+
+.nav-links-btn:hover {
+  background-color: transparent;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 4px;
+  border: solid 1px red;
+  transition: all 0.3s ease-out;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background: white;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    position: relative;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0 ;
+  }
+
+  .nav-menu {
+    display: grid;
+    grid-template-columns: auto;
+    background: red;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  #navbar-logo {
+    margin-left: 20px;
+  }
+
+  .nav-menu.active {
+    background: red;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links {
+    text-align: center;
+    line-height: 60px;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.4s ease-out;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .nav-links-btn {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    background-color: black;
+    color: white;
+    transition: all 0.4s ease-out;
+  }
+  
+  .nav-links-btn:hover {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    background-color: red;
+    color: black;
+    transition: all 0.4s ease-out;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .menu-toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle:hover {
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* TERMINA MENU DESPLEGABLE */
