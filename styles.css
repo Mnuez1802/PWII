@@ -1,125 +1,15 @@
-* {
-  box-sizing: border-box;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+   /*background-color: #f0f0f0;*/
 }
-
-.pc_background {
-  background-color: rgb(244, 224, 186);
-}
-
-.switch_background {
-  background-color: rgb(249, 207, 207);
-}
-
-.index_background {
-  background-color: rgb(255, 186, 186);
-}
-
-.center {
-  text-align: center;
-}
-
-footer {
-  text-align: center;
-  color: black;
-}
-
-
-p {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 110%;
-  color: white;
-  text-shadow: 1px 0 black, -1px 0 black;
-}
-
-
-.card {
-  width: 75%;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: white;
-  height: 25em;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  border-radius: 1em;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: scale(1.07);
-  box-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
-  transition: all 0.2s ease-out;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.card_text {
-  background-color: red;
-  margin-right: auto;
-  margin-left: auto;
-  height: 4em;
-  border-radius: 0em 0em 0em 0em;
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-  font-size: 110%;
-  font-weight: 500;
-}
-
-.card_text_p {
-  align-items: center;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.img_juego {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.card_2 {
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: white;
-  height: 25em;
-  margin-top: 1em;
-  margin-bottom: 2em;
-  border-radius: 1em;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.letra_negra {
-  color: black;
-  text-shadow: none;
-  text-align: justify;
-  font-size: 125%;
-}
-
 /* MENU DESPLEGABLE */
 
 .nav-container{
   width: 100%;
   background-color: black;
-  z-index: 100;
+  z-index: 101;
 }
 
 .navbar {
@@ -139,9 +29,9 @@ img {
   margin-left: 20px;
 }
 
-#navbar-logo {
+/* #navbar-logo {
   cursor: pointer;
-}
+} */
 
 .nav-menu {
   display: grid;
@@ -196,7 +86,6 @@ img {
   }
 
   .nav-menu {
-    position: sticky;
     display: grid;
     grid-template-columns: auto;
     background: red;
@@ -285,3 +174,126 @@ img {
 }
 
 /* TERMINA MENU DESPLEGABLE */
+
+#top{
+  text-align: center;
+}
+
+
+#titulos{
+  color: white;
+  text-decoration: none;
+}
+
+.main-content {
+  padding: 10px;
+}
+
+.game-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.game-card img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+/*.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}*/
+
+#footer{
+  text-align: center                  ;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  
+}
+
+.card {
+  background-color: #0e7a0d;
+  border-radius: 8px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+  width: 220px;
+  height: 350px;
+  overflow: hidden; /* Para ocultar la sombra que pueda extenderse más allá de la tarjeta */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1); /* Aumenta la escala de la tarjeta al pasar el mouse por encima */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  display: block;
+}
+
+.card-content h2 {
+  color: #ffffff;
+  font-size: 18px;
+  
+}
+
+/* CAMBIE PARA REDUCIR CSS */
+.card_juegos{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 20px;
+}
+
+.card_juegos h2 {
+  color: #333;
+}
+
+.card_juegos p {
+  color: #666;
+}
+
+
+.header_juegos{
+  background-color: #515151;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  position: sticky;
+  top: 0px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+#top{
+  text-align: center;
+}
+
+.main-content .juegos{
+  padding: 10px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+/* FIN CAMBIO */
+
