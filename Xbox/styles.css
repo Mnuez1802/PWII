@@ -9,8 +9,7 @@ body {
 .nav-container{
   width: 100%;
   background-color: black;
-  z-index: 100;
-  border-radius: 0.7em 0.7em 0 0;
+  z-index: 101;
 }
 
 .navbar {
@@ -251,4 +250,50 @@ body {
   font-size: 18px;
   
 }
+
+/* CAMBIE PARA REDUCIR CSS */
+.card_juegos{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 20px;
+}
+
+.card_juegos h2 {
+  color: #333;
+}
+
+.card_juegos p {
+  color: #666;
+}
+
+
+.header_juegos{
+  background-color: #515151;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  position: sticky;
+  top: 0px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+#top{
+  text-align: center;
+}
+
+.main-content .juegos{
+  padding: 10px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+/* FIN CAMBIO */
 
